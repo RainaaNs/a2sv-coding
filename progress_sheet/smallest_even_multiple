@@ -1,0 +1,21 @@
+class Solution:
+    def smallestEvenMultiple(self, n: int) -> int:
+        n = int(input())
+        list = []   
+
+        for i in range(1, 150):
+            m = i * n
+            if m % 2 == 0:
+                list.extend([m])
+            else:
+                i = i + 1 
+
+        smallest = list[0]
+
+        for a in list:
+            if a < smallest:
+                smallest = a
+
+        return smallest
+     
+        
