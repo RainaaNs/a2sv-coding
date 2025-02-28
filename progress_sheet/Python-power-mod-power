@@ -1,0 +1,10 @@
+
+a = int(input())
+b = int(input())
+m = int(input())
+
+# 3^4
+print (pow(a,b))
+
+# (3^4)mod m
+print (pow(a,b,m))
